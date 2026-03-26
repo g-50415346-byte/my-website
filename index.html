@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="zh">
 <head>
-<title>我的补习中心</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你的补习中心名字</title>
+<style>
+  body{font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9;}
+  header{background:#4CAF50;color:#fff;padding:50px 20px;text-align:center;}
+  header h1{font-size:2.5em;margin:0;}
+  header p{font-size:1.2em;margin:10px 0;}
+  .container{max-width:900px;margin:20px auto;padding:0 20px;}
+  .btn{display:inline-block;padding:12px 24px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-size:16px;margin:10px 0;}
+  img{width:100%;border-radius:8px;margin-bottom:15px;}
+  h2{color:#333;margin-top:40px;}
+  form{background:#fff;padding:20px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,0.1);}
+  .form-group{margin-bottom:15px;}
+  input,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:16px;}
+  button{width:100%;padding:12px;background:#007BFF;color:#fff;border:none;border-radius:6px;font-size:18px;cursor:pointer;}
+  button:hover{background:#0056b3;}
+</style>
 </head>
-
 <body>
 
-<h1>欢迎来到我的补习中心 🎓</h1>
+<header>
+  <h1>你的补习中心名字</h1>
+  <p>🏆 专业小学生补习课程，提升成绩就是现在！</p>
+  <a href="https://wa.me/60123456789" class="btn">📲 WhatsApp 联系我们</a>
+</header>
 
-<p>这里提供小学补习课程。</p>
+<div class="container">
 
-<p>📞 联系号码：012-3456789</p>
+  <h2>📸 我们的环境照片</h2>
+  <img src="照片1.jpg" alt="教室照片">
+  <img src="照片2.jpg" alt="课堂照片">
+  <!-- 如果有更多照片，可以复制 <img> 标签 -->
+
+  <h2>📝 在线报名</h2>
+  <form action="https://formsubmit.co/你的邮箱@example.com" method="POST">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="姓名" required>
+    </div>
+    <div class="form-group">
+      <input type="text" name="grade" placeholder="年级" required>
+    </div>
+    <div class="form-group">
+      <input type="tel" name="phone" placeholder="电话" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="备注 / 留言" rows="3"></textarea>
+    </div>
+    <button type="submit">提交报名</button>
+  </form>
+
+</div>
 
 </body>
 </html>
